@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Mad Libs</h1>
+
+    <form id="madLibForm">
+        <label for="adjective">Adjective:</label>
+        <input type="text" id="adjective" placeholder="Enter an adjective">
+
+        <label for="noun">Noun:</label>
+        <input type="text" id="noun" placeholder="Enter a noun">
+
+        <label for="verb">Verb:</label>
+        <input type="text" id="verb" placeholder="Enter a verb">
+
+        <label for="adverb">Adverb:</label>
+        <input type="text" id="adverb" placeholder="Enter an adverb">
+
+        <label for="animal">Animal:</label>
+        <input type="text" id="animal" placeholder="Enter an animal">
+
+        <label for="place">Place:</label>
+        <input type="text" id="place" placeholder="Enter a place">
+
+        <label for="color">Color:</label>
+        <input type="text" id="color" placeholder="Enter a color">
+
+        <button type="button" class="generate-btn" onclick="generateMadLib()">Generate Mad Lib</button>
+        <button type="reset" class="clear-btn">Clear</button>
+    </form>
+
+    <div id="madLibOutput"></div>
+</div>
+
+<script src="server.js"></script>
+</body>
+</html>
