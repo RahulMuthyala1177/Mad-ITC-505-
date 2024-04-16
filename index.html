@@ -36,8 +36,27 @@
         <button type="button" class="generate-btn" onclick="generateMadLib()">Generate Mad Lib</button>
         <button type="reset" class="clear-btn">Clear</button>
     </form>
+<h2>Addendum</h2>
+<p> 1.ExpressJS Setup: I followed the provided instructions to set up ExpressJS in my project directory. This involved creating a server.js file, installing necessary npm packages (express, forever, and morgan), and configuring the server to handle requests.<br>
+    <br>
+    2.Web Form Creation: I created a new webpage accessible at http://my_domain/ITC505/lab-7/index.html. The page contains a form element with inputs for at least five different types of words required for the Mad Lib. Each input is labeled appropriately to guide users on what type of word to input.<br>
+    <br>  
+    3.Server-side Handling: I included a server.post() route handler in the server.js file to handle form submissions. Upon receiving a POST request, the server interpolates the user-provided words into a predefined Mad Lib template and sends back the filled Mad Lib as a textual response using res.send().<br>
+    <br>
+    4.Validation: Before generating the Mad Lib, I implemented basic form validation to ensure that all required fields are filled out. If any field is missing, an error message is displayed prompting the user to fill out all fields.<br>
+    <br>
+    5.Footer Script: I embedded a footer script provided in the instructions to display the last modified date of the page.</p>
 
     <div id="madLibOutput"></div>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
 </div>
 
 <script src="server.js"></script>
